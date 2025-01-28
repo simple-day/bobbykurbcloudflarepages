@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    @apply text-gray-500; 
+}
+
+.comingsoon-links {
+    @apply flex gap-5 mt-2.5 hover:text-pink-300 transition duration-500;
+}
+
+.cs-bg-placeholder {
+    @apply bg-pink-200;
+}
+
+.cs-bg-comingsoon {
+    @apply bg-comingsoon;
+  }
