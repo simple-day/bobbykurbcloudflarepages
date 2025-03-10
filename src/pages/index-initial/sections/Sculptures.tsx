@@ -4,33 +4,25 @@ const Sculptures = () => {
   return (
     
 
-<div className="hero min-h-screen">
-<div className="hero-content flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-72 lg:gap-96">
-    {/* Sculptures Heading */}
-    <h1 className="text-3xl font-bold mb-4 md:hidden">SCULPTURES</h1>
+<div className="hero min-h-screen flex flex-col sm:flex-col md:flex-row items-center justify-center gap-20 md:gap-56 gap lg:gap-96 p-10 bg-zinc-800">
+  {/* Text container (left on md and bigger) */}
+  <div className="text-center md:text-left text-zinc-300">
+    <h1 className="text-3xl font-bold mb-2 drop-shadow-2xl shadow-zinc-400">SCULPTURES</h1>
+    <h2 className="text-2xl">Available Soon</h2>
+  </div>
 
-    {/* Image Section */}
-    <div className="mb-6 md:mb-0 md:ml-8">
-      <img
-        src={Sculpture}
-        alt="sculpture"
-        className="max-w-sm md:max-w-lg shadow-2xl"
-      />
-    </div>
-
-    {/* Text Section */}
-    <div className="text-center md:text-left">
-      {/* Sculptures Heading (for medium and larger screens) */}
-      <h1 className="text-3xl font-bold mb-4 hidden md:block ">SCULPTURES</h1>
-
-      {/* Subheading and Year */}
-      <div className="flex flex-col sm:items-center md:items-start">
-        <h2 className="text-2xl mb-2">Man of Steel</h2>
-        <p className="text-gray-600">2021</p>
-      </div>
-    </div>
+  {/* Image container (right on md and bigger) */}
+  <div className="mb-6 md:mb-0">
+    <img
+      src={Sculpture}
+      alt="sculpture"
+     className="max-w-sm md:max-w-lg shadow-2xl shadow-zinc-700"
+    />
   </div>
 </div>
+
+
+
   )
 }
 
